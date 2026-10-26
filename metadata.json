@@ -1,0 +1,6 @@
+{
+  "name": "MandirOS - AI-Powered Temple Management System",
+  "description": "Open-source, template-driven Temple Management System (TMS) featuring AI devotee assistant, offering auction bidding with vision tagging, crowd & prasad queue optimization, and multi-channel notifications.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

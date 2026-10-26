@@ -1,0 +1,64 @@
+{
+  "templeName": "Shree Siddhivinayak Temple Trust",
+  "shortName": "Siddhivinayak TMS",
+  "location": "Prabhadevi, Mumbai, Maharashtra 400028, India",
+  "contactPhone": "+91 22 2422 3206",
+  "trusteeEmail": "trustee@siddhivinayak.org",
+  "supportedLanguages": [
+    { "code": "en", "name": "English", "native": "English" },
+    { "code": "hi", "name": "Hindi", "native": "हिन्दी" },
+    { "code": "mr", "name": "Marathi", "native": "मराठी" },
+    { "code": "gu", "name": "Gujarati", "native": "ગુજરાતી" }
+  ],
+  "currency": "INR",
+  "currencySymbol": "₹",
+  "modulesEnabled": {
+    "artiTimings": true,
+    "visarjanAlerts": true,
+    "mahaprasadTokens": true,
+    "sareeAuction": true,
+    "donationLedger": true,
+    "autoReceiptOCR": true,
+    "crowdPrediction": true
+  },
+  "aiEngine": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash",
+    "multilingualBotEnabled": true,
+    "autoValueAuctionItems": true,
+    "fairBidSentinel": true,
+    "ocrSlipProcessor": true,
+    "smartQueueStaggering": true
+  },
+  "notificationChannels": {
+    "whatsapp": {
+      "enabled": true,
+      "priority": 1,
+      "costPerMsg": 0.005,
+      "webhookUrl": "https://api.whatsapp.com/v16.0/tms-siddhivinayak/messages"
+    },
+    "telegram": {
+      "enabled": true,
+      "priority": 2,
+      "costPerMsg": 0.0,
+      "channelHandle": "@SiddhivinayakOfficialLive"
+    },
+    "sms": {
+      "enabled": true,
+      "priority": 3,
+      "costPerMsg": 0.002,
+      "senderId": "SVDNYK"
+    }
+  },
+  "diningHall": {
+    "totalSeats": 350,
+    "batchDurationMinutes": 45,
+    "slots": [
+      { "id": "slot-1", "time": "11:30 AM - 12:15 PM", "capacity": 350, "booked": 298 },
+      { "id": "slot-2", "time": "12:15 PM - 01:00 PM", "capacity": 350, "booked": 342 },
+      { "id": "slot-3", "time": "01:00 PM - 01:45 PM", "capacity": 350, "booked": 310 },
+      { "id": "slot-4", "time": "01:45 PM - 02:30 PM", "capacity": 350, "booked": 185 },
+      { "id": "slot-5", "time": "07:30 PM - 08:30 PM", "capacity": 350, "booked": 220 }
+    ]
+  }
+}
